@@ -9,6 +9,9 @@ router.get('/index', async ctx => { ctx.body = 'index page'; });
 router.get('/post', async ctx => { ctx.body = 'post page'; });
 router.get('/list', async ctx => { ctx.body = 'list page'; });
 router.get('/item', async ctx => { ctx.body = 'item page'; });
+router.get('/createPost', async ctx => {
+  console.log('Creating post..');
+});
 
 app.use(bodyParser())
 app.use(router.routes())
